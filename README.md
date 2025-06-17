@@ -1,13 +1,12 @@
-# 🧪 Análisis de embudo de conversión y pruebas A/A/B en app de e-commerce
+# Análisis de embudo de conversión y pruebas A/B en app de e-commerce:
 
-Este proyecto tiene como objetivo analizar el comportamiento de los usuarios en una aplicación de ventas digitales, evaluar su recorrido a través del embudo de conversión y realizar pruebas A/A/B para evaluar el impacto de un cambio de fuentes en la aplicación.
+## Descripción
+Este proyecto analiza el comportamiento de los usuarios en una aplicación de una empresa dedicada a la venta de productos alimenticios. El objetivo principal es entender el flujo de usuarios a través del embudo de ventas y evaluar el impacto de un cambio en la tipografía de la app mediante un test A/A/B.
 
-## 🎯 Objetivo
-
-- Estudiar el embudo de ventas.
-- Comprobar la distribución equitativa de los grupos (A/A) antes de aplicar la prueba real.
-- Evaluar estadísticamente el impacto de un cambio de fuente en la interfaz mediante una prueba A/B.
-- Apoyar decisiones de producto con evidencia basada en datos.
+## 🎯 Objetivos
+- Identificar en qué etapas del embudo de ventas los usuarios abandonan el proceso antes de completar una compra.
+- Validar la confiabilidad del test A/A/B mediante la comparación entre grupos de control.
+- Determinar si el cambio de tipografía afecta significativamente el comportamiento de los usuarios en la app.
 
 ## 🧰 Tecnologías utilizadas
 
@@ -17,29 +16,26 @@ Este proyecto tiene como objetivo analizar el comportamiento de los usuarios en 
 - Statsmodels (prueba de proporciones Z)
 - Jupyter Notebook
 
-## 🔍 Pasos del análisis
+## Metodología
+- Análisis del embudo de ventas basado en eventos de usuario.
+- Pruebas estadísticas (z-test) para comparar proporciones de usuarios entre grupos experimentales y de control.
+- Evaluación de diferencias significativas con un nivel de confianza del 95% (α = 0.05).
 
-1. Limpieza y transformación de datos de eventos de usuario.
-2. Análisis del embudo de conversión para detectar pérdidas de usuarios.
-3. Verificación de la homogeneidad entre los grupos A/A.
-4. Aplicación de prueba estadística Z para comparar tasas de conversión en el test A/B.
-5. Visualización de los resultados para facilitar la interpretación.
+## Datos
+Los datos incluyen registros de eventos con las siguientes columnas principales:
+- `EventName`: Nombre del evento generado por el usuario.
+- `DeviceIDHash`: Identificador único del usuario.
+- `EventTimestamp`: Marca temporal del evento.
+- `ExpId`: Identificador del experimento (246 y 247 = grupos control; 248 = grupo prueba).
 
-## 📌 Conclusiones
+## 📌 Resultados
+Se concluye que el cambio de tipografía no impacta significativamente el flujo de usuarios a través del embudo de ventas.
 
-- Se identificaron etapas específicas del embudo con mayor tasa de abandono, lo que permite enfocar mejoras en la experiencia de usuario.
-- La prueba A/A demostró que los grupos eran homogéneos y comparables.
-- La prueba A/B mostró que el cambio de fuente **no generó diferencias estadísticamente significativas** en la conversión, por lo que no se justifica su implementación.
-- El análisis permitió al equipo tomar decisiones respaldadas por datos y no por suposiciones.
-
-## 📎 Cómo ejecutarlo
-
-1. Clonar este repositorio.
-2. Abrir el notebook en Jupyter o Google Colab.
-3. Ejecutar las celdas secuencialmente.
-4. Revisar gráficos y estadísticas generadas al final.
+---
 
 ## 🧠 Autor
 
 David Gustavo Alfonso Torres  
 [LinkedIn](https://www.linkedin.com/in/david-alfonso-24a197321/) | [GitHub](https://github.com/DavidAlfonso-19)
+
+
